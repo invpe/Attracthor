@@ -31,6 +31,9 @@ Chaos refers to a type of behavior in a dynamic system that appears to be disord
 - Deterministic Yet Unpredictable: Chaos is deterministic, meaning that it follows specific rules or equations. However, because of its sensitivity to initial conditions, it can be practically impossible to predict long-term behavior.
   
 # Attractor
+
+![image](https://github.com/invpe/Attracthor/assets/106522950/db339de2-85f4-4199-9046-b898b11dafb9)
+
 An attractor is a set of values or states toward which a dynamic system tends to evolve over time. Attractors are a fundamental concept in the study of chaos and dynamical systems. They represent the long-term behavior or equilibrium points of a system. There are different types of attractors:
 
 - Fixed Point (Steady State) Attractor: In a fixed point attractor, the system converges to a single stable state. It remains at that state indefinitely.
