@@ -1,9 +1,8 @@
-![image](https://github.com/invpe/Attracthor/assets/106522950/124343e1-a4df-46f8-9a57-a74bf8879cd7)![image](https://github.com/invpe/Attracthor/assets/106522950/6c5d2637-aa02-4d91-8394-dad1f8ccf391)
-
-
 # Synopsis
 Applying the Delayed Space Coordinates (DSC) technique to a system, like a sequence of random numbers, to explore and discover whether the system exhibits chaotic behavior but most imporantly, to
 look for beautifull intriguing strange attractors.
+
+![image](https://github.com/invpe/Attracthor/assets/106522950/124343e1-a4df-46f8-9a57-a74bf8879cd7)
 
 The presence of beautiful and visually striking patterns, often referred to as "strange attractors," in the visualizations resulting from the application of Delayed Space Coordinates (DSC) on random data can be intriguing. 
 These strange attractors are unexpected and complex patterns that emerge in the data, and they can have various interpretations in the context of applying DSC to a dataset.
@@ -18,6 +17,8 @@ The Delayed Space Coordinates (DSC) technique is not specifically tailored to fi
 DSC is a mathematical tool that has been applied to various types of data to reveal hidden structures and attractors, and it can be particularly useful when investigating chaotic systems. 
 DSC is a technique used to analyze time series data, including random or pseudorandom sequences. It involves embedding the time series data in a higher-dimensional space with delayed coordinates. 
 This process can reveal patterns and structures within the data that may not be apparent when looking at the one-dimensional time series.
+
+![image](https://github.com/invpe/Attracthor/assets/106522950/6c5d2637-aa02-4d91-8394-dad1f8ccf391)
 
 # Chaos
 Chaos refers to a type of behavior in a dynamic system that appears to be disordered, unpredictable, and highly sensitive to initial conditions. In a chaotic system, tiny changes in the starting conditions can lead to significantly different outcomes over time. Chaotic systems are often characterized by the following features:
