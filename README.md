@@ -1,3 +1,6 @@
+![image](https://github.com/invpe/Attracthor/assets/106522950/124343e1-a4df-46f8-9a57-a74bf8879cd7)![image](https://github.com/invpe/Attracthor/assets/106522950/6c5d2637-aa02-4d91-8394-dad1f8ccf391)
+
+
 # Synopsis
 Applying the Delayed Space Coordinates (DSC) technique to a system, like a sequence of random numbers, to explore and discover whether the system exhibits chaotic behavior but most imporantly, to
 look for beautifull intriguing strange attractors.
