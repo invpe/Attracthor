@@ -53,3 +53,8 @@ Attractors are integral to the understanding of chaos because they provide a way
 - Predicting Long-Term Behavior: While chaotic systems are highly sensitive to initial conditions, attractors represent the regions where the system tends to spend most of its time. They provide insights into the system's long-term tendencies.
 
 - Visualization and Understanding: Strange attractors, in particular, are visually intriguing and have been the subject of artistic and scientific exploration. They help us visualize the complexity of chaos.
+
+  
+![image](https://github.com/invpe/Attracthor/assets/106522950/8fd9752e-9a7e-454a-a69d-42229a69b2fc) 
+
+
