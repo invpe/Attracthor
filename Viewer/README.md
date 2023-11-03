@@ -52,6 +52,11 @@ Outcomes: _Perfect randomness_ - by the looks of the visualization - no patterns
 
   ![image](https://github.com/invpe/Attracthor/assets/106522950/08b628af-cae8-4c3f-8a12-a2d42c868705)
 
+* macosx-darwin-23.0.0-x86_64.txt
+
+  ![image](https://github.com/invpe/Attracthor/assets/106522950/c2a3f289-d7f0-474d-8eed-6553b95a93f3)
+
+
 ## ESP32
 
 ESP32 contains a hardware random number generator, values from it can be obtained using the APIs esp_random() 
