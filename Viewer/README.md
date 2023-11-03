@@ -40,7 +40,9 @@ At first i am looking into the PRNG's within various operating systems.
 This is the easiest dataset to get and try thus it goes first in the line.
 
 ## Linux
-Data obtained with the use of `generate2.sh`
+Data obtained with the use of `generate2.sh`.
+
+Outcomes: _Perfect randomness_ - by the looks of the visualization - no patterns, random distribution of points in the space.
 
 * rpi-armv7l-5.10.63.v7.txt  
 
@@ -58,6 +60,8 @@ Get one random 32-bit word from hardware RNG.
 If Wi-Fi or Bluetooth are enabled, this function returns true random numbers. In other situations, if true random numbers are required then consult the ESP-IDF Programming Guide “Random Number Generation” section for necessary prerequisites.
 
 This function automatically busy-waits to ensure enough external entropy has been introduced into the hardware RNG state, before returning a new random number. This delay is very short (always less than 100 CPU cycles).
+
+Outcomes: _Perfect randomness_ - by the looks of the visualization - no patterns, random distribution of points in the space.
 
 * esp32 no-wifi  
   
