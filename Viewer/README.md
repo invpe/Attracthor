@@ -44,10 +44,12 @@ This is the easiest dataset to get and try thus it goes first in the line.
 
 * rpi-armv7l-5.10.63.v7.txt
 
-![image](https://github.com/invpe/Attracthor/assets/106522950/ae0dd648-5d61-4a22-a5c6-2c562c062643)
+  ![image](https://github.com/invpe/Attracthor/assets/106522950/ae0dd648-5d61-4a22-a5c6-2c562c062643)
 
 * linux-x86_64-5.15.0.88.generic.txt
 
-![image](https://github.com/invpe/Attracthor/assets/106522950/08b628af-cae8-4c3f-8a12-a2d42c868705)
+  ![image](https://github.com/invpe/Attracthor/assets/106522950/08b628af-cae8-4c3f-8a12-a2d42c868705)
 
+* esp32 no-wifi 
 
+  ![image](https://github.com/invpe/Attracthor/assets/106522950/25dfa05d-0e28-4ded-a260-cb12494b4061)
