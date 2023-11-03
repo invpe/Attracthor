@@ -35,9 +35,7 @@ _Position.z = (_Position.z-iMinValue)/(iMaxValue-iMinValue);
 ```
 
 # Random numbers
-
-At first i am looking into the PRNG's within various operating systems. 
-This is the easiest dataset to get and try thus it goes first in the line.
+Random numbers are values that are generated unpredictably or without a discernible pattern. They are used in various applications across mathematics, science, statistics, computer science, and many other fields. Random numbers play a crucial role in simulations, games, cryptography, and statistical analysis, among other areas.
 
 ## Linux
 Data obtained with the use of `generate2.sh`.
