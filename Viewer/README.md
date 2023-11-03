@@ -80,3 +80,11 @@ Outcomes: _Perfect randomness_ - by the looks of the visualization - no patterns
 
   ![image](https://github.com/invpe/Attracthor/assets/106522950/d2f24e09-586b-4f6a-bf99-ff4ccd5bdcca)
 
+
+# Analog readings
+
+* esp32 analog read port 26 (M5Stack AtomU)
+
+  ![image](https://github.com/invpe/Attracthor/assets/106522950/2ee59848-103f-4e1d-93ae-521903c6daea)
+  ![image](https://github.com/invpe/Attracthor/assets/106522950/5fb0e38d-9fba-4930-924f-c2d8cff32bd3)
+
