@@ -1,18 +1,47 @@
-# Results
-
+# Synopsis
 A gallery of visuals made when looking for strange attractors from various datasets.
-Still WIP
+This is still a work in progress.
 
------
+# Setup
+Following setup is used in this experiment.
 
-![image](https://github.com/invpe/Attracthor/assets/106522950/3ea6607d-5b0c-408b-b23a-033d0a9d1869)
+- Datasets are raw txt files with numbers
 
-`A perfect randomness` 
+```
+13786
+11979
+16525
+30653
+18735
+12201
+12511
+```
 
-![image](https://github.com/invpe/Attracthor/assets/106522950/63d5c416-c31b-49ed-9fd1-7ad87c5fa05b)
-![Peek 2023-11-03 14-09](https://github.com/invpe/Attracthor/assets/106522950/27d23bb5-d45a-4956-8b04-5e8b3fba16f2)
+- All datapoints are applied DSC
 
-`First attractor`
+```
+tPosition _Position;
+_Position.x = vValues[a] - vValues[a-1];
+_Position.y = vValues[a-1] - vValues[a-2];
+_Position.z = vValues[a-2] - vValues[a-3];
+```
+
+- Then values are normalized to `<0,1>` so the datapoints once rendered will fit this range in 3D space.
+
+```
+_Position.x = (_Position.x-iMinValue)/(iMaxValue-iMinValue);
+_Position.y = (_Position.y-iMinValue)/(iMaxValue-iMinValue);
+_Position.z = (_Position.z-iMinValue)/(iMaxValue-iMinValue);
+```
+
+# Random numbers
+
+At first i am looking into the PRNG's within various operating systems. 
+This is the easiest dataset to get and try thus it goes first in the line.
 
 
+`A perfect randomness` - rpi-armv7l-5.10.63.v7.txt
 
+![image](https://github.com/invpe/Attracthor/assets/106522950/ae0dd648-5d61-4a22-a5c6-2c562c062643)
+
+ 
