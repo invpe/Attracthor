@@ -1,4 +1,5 @@
 ![image](https://github.com/invpe/Attracthor/assets/106522950/63df7f88-4f95-4384-9505-77d035f45b59)
+![Peek 2023-11-03 14-10](https://github.com/invpe/Attracthor/assets/106522950/58badbf5-216a-4c4e-93da-dc2b8cd61cbb)
 
 # Synopsis
 Applying the Delayed Space Coordinates (DSC) technique to a system, like a sequence of random numbers, to explore and discover whether the system exhibits chaotic behavior but most imporantly, to
