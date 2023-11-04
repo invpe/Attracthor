@@ -88,3 +88,14 @@ Outcomes: _Perfect randomness_ - by the looks of the visualization - no patterns
   ![image](https://github.com/invpe/Attracthor/assets/106522950/2ee59848-103f-4e1d-93ae-521903c6daea)
   ![image](https://github.com/invpe/Attracthor/assets/106522950/5fb0e38d-9fba-4930-924f-c2d8cff32bd3)
 
+# SDR
+Using an SDR (Software Defined Radio) device to explore the noise from surroundings.
+The electromagnetic noise captured by an SDR is essentially a time series of signal strengths that can be quite complex, influenced by a wide array of factors such as human-made signals, natural atmospheric phenomena, and cosmic sources. 
+
+## Capture the Data
+
+- Tune to an Empty Frequency: Find a frequency that is not used for any active transmission. The noise in this empty channel might be more indicative of natural or environmental electromagnetic noise.
+- Broad Spectrum Analysis: Alternatively, capture a broad spectrum of frequencies. This can give more comprehensive dataset that includes various sources of noise and signals.
+- Raw IQ Data: Record the raw IQ (in-phase and quadrature) data, which preserves the full information of the received signal and would be more suitable for complex analysis.
+
+  
