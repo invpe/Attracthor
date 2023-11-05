@@ -92,8 +92,18 @@ Outcomes: _Perfect randomness_ - by the looks of the visualization - no patterns
 # Promisc
 
 * esp32 promisc length of packet including Frame Check Sequence(FCS)
+  
+  Outcomes: Beautifull structure revealed by the visualization technique suggests a certain level of regularity and pattern in the transmission of data packets.
+
+  The areas where points congregate could indicate common packet sizes or frequent data bursts. In network traffic, these could be due to standard packet sizes set by protocols or frequent message types.     The dense areas suggest that these packet sizes are common, while sparser areas would represent less common packet sizes
+  In the context of network data, we might not be dealing with attractors in the traditional dynamical systems sense but rather with "attractors" of typical behavior.
+  For example, if certain packet sizes are more prevalent due to the underlying protocol optimizations or data transmission patterns, they might form attractor-like structures.
+
+
 
   ![image](https://github.com/invpe/Attracthor/assets/106522950/db216731-d5dd-42b8-a466-5ac9aaf9a937)
+
+  
 
 
 # ENVIRONMENT
