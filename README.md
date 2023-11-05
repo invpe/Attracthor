@@ -19,18 +19,6 @@ This process can reveal patterns and structures within the data that may not be 
 
 ![image](https://github.com/invpe/Attracthor/assets/106522950/6c5d2637-aa02-4d91-8394-dad1f8ccf391)
 
-# Chaos
-
-Chaos is not assumed in advance; rather, it's a property that is explored and potentially confirmed through analysis and visualization.
-So, the confirmation of chaos arises from the analysis and visualization of the DSC-transformed data rather than being assumed from the outset. 
-
-Chaos refers to a type of behavior in a dynamic system that appears to be disordered, unpredictable, and highly sensitive to initial conditions. In a chaotic system, tiny changes in the starting conditions can lead to significantly different outcomes over time. Chaotic systems are often characterized by the following features:
-- Sensitivity to Initial Conditions: This is also known as the "butterfly effect." It means that even a small change in the initial conditions of a chaotic system can result in dramatically different outcomes.
-
-- Complex Dynamics: Chaotic systems often exhibit complex, non-repeating patterns that are difficult to predict. They may involve irregular oscillations, turbulence, or seemingly random behavior.
-
-- Deterministic Yet Unpredictable: Chaos is deterministic, meaning that it follows specific rules or equations. However, because of its sensitivity to initial conditions, it can be practically impossible to predict long-term behavior.
-  
 # Attractor
 
 ![image](https://github.com/invpe/Attracthor/assets/106522950/db339de2-85f4-4199-9046-b898b11dafb9)
@@ -43,6 +31,18 @@ An attractor is a set of values or states toward which a dynamic system tends to
 
 - Strange Attractor: A strange attractor is a type of attractor associated with chaotic systems. It exhibits complex, non-repeating behavior. Trajectories in a chaotic system may seem random, but they are confined to a bounded region in phase space.
 
+# Chaos
+
+Chaos is not assumed in advance; rather, it's a property that is explored and potentially confirmed through analysis and visualization.
+So, the confirmation of chaos arises from the analysis and visualization of the DSC-transformed data rather than being assumed from the outset. 
+
+Chaos refers to a type of behavior in a dynamic system that appears to be disordered, unpredictable, and highly sensitive to initial conditions. In a chaotic system, tiny changes in the starting conditions can lead to significantly different outcomes over time. Chaotic systems are often characterized by the following features:
+- Sensitivity to Initial Conditions: This is also known as the "butterfly effect." It means that even a small change in the initial conditions of a chaotic system can result in dramatically different outcomes.
+
+- Complex Dynamics: Chaotic systems often exhibit complex, non-repeating patterns that are difficult to predict. They may involve irregular oscillations, turbulence, or seemingly random behavior.
+
+- Deterministic Yet Unpredictable: Chaos is deterministic, meaning that it follows specific rules or equations. However, because of its sensitivity to initial conditions, it can be practically impossible to predict long-term behavior.
+  
 # Why Attractors are Integral to Chaos
 
 Attractors are integral to the understanding of chaos because they provide a way to represent the long-term behavior of a dynamic system, even if that behavior appears to be chaotic and unpredictable. Here's why attractors are important in the study of chaos:
