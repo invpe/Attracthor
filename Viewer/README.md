@@ -1,4 +1,8 @@
 # Synopsis
+
+![image](https://github.com/invpe/Attracthor/assets/106522950/b8bac192-c2f2-43d3-ba9c-c113fcdc3b41)
+
+
 A gallery of visuals made when looking for strange attractors from various datasets.
 This is still a work in progress.
 
