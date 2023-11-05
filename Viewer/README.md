@@ -92,28 +92,35 @@ Outcomes: _Perfect randomness_ - by the looks of the visualization - no patterns
 
 # ENVIRONMENT
 
-## PM10
+## PPM
 
-* PM10 readings from 2022 (full year)
+* PM1,2.5,10 readings from 2021 (full year)
+
+ ![image](https://github.com/invpe/Attracthor/assets/106522950/4f2068c1-5ee4-43ec-b7a3-e3caeea3c9d7)
+
+ ![image](https://github.com/invpe/Attracthor/assets/106522950/9ee7e5e2-c79a-4842-a3cb-98b854dd769e)
+
+ ![image](https://github.com/invpe/Attracthor/assets/106522950/77010b47-6e12-4c73-a0ab-6582bc2f79c1)
+
+
   
-  ![image](https://github.com/invpe/Attracthor/assets/106522950/2e813856-39db-47e8-945d-01a4d82b78b4)
-  ![image](https://github.com/invpe/Attracthor/assets/106522950/ce4ec855-a513-4501-a713-c7ecc64e91f8)
-
-  
-  A dense core with filaments or strands radiating out, it may indicate a chaotic attractor with a strong pull back to a central set of states (the dense part), with occasional forays into more extreme conditions (the strands).
-
+ 
 ## HUMIDITY
 
-* Humidity readings from 2022 (full year)
+* Humidity readings from 2021 (full year)
 
-  ![image](https://github.com/invpe/Attracthor/assets/106522950/90afb67f-092f-401b-86cd-b87fbcafec62)
+  ![image](https://github.com/invpe/Attracthor/assets/106522950/23944ee8-5eb2-4dfc-9099-9ea21a615a8e)
+  
+
 
 ## TEMPERATURE
 
-* Temperature readings from 2022 (full year)
+* Temperature readings from 2021 (full year)
 
-  ![image](https://github.com/invpe/Attracthor/assets/106522950/c8fbdb82-fca1-42f7-a470-a04d96195edb)
+  ![image](https://github.com/invpe/Attracthor/assets/106522950/516dca1e-9268-4638-9fdd-da84633a27b2)
 
+
+  A dense core with filaments or strands radiating out, it may indicate a chaotic attractor with a strong pull back to a central set of states (the dense part), with occasional forays into more extreme conditions (the strands).
 
   
 
