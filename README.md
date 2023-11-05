@@ -11,9 +11,6 @@ These strange attractors are unexpected and complex patterns that emerge in the 
 
 `The simplest approach to detect an attractor, especially if you're new to the field of chaos theory and visualization, is visual inspection. It doesn't require complex mathematical calculations or algorithms`
 
-Chaos is not assumed in advance; rather, it's a property that is explored and potentially confirmed through analysis and visualization.
-So, the confirmation of chaos arises from the analysis and visualization of the DSC-transformed data rather than being assumed from the outset. 
-
 # Delayed Space Coordinates
 The Delayed Space Coordinates (DSC) technique is not specifically tailored to finding chaotic behavior but rather a method used to explore the behavior of dynamic systems, including the potential presence of chaotic or complex patterns. 
 DSC is a mathematical tool that has been applied to various types of data to reveal hidden structures and attractors, and it can be particularly useful when investigating chaotic systems. 
@@ -23,6 +20,10 @@ This process can reveal patterns and structures within the data that may not be 
 ![image](https://github.com/invpe/Attracthor/assets/106522950/6c5d2637-aa02-4d91-8394-dad1f8ccf391)
 
 # Chaos
+
+Chaos is not assumed in advance; rather, it's a property that is explored and potentially confirmed through analysis and visualization.
+So, the confirmation of chaos arises from the analysis and visualization of the DSC-transformed data rather than being assumed from the outset. 
+
 Chaos refers to a type of behavior in a dynamic system that appears to be disordered, unpredictable, and highly sensitive to initial conditions. In a chaotic system, tiny changes in the starting conditions can lead to significantly different outcomes over time. Chaotic systems are often characterized by the following features:
 - Sensitivity to Initial Conditions: This is also known as the "butterfly effect." It means that even a small change in the initial conditions of a chaotic system can result in dramatically different outcomes.
 
