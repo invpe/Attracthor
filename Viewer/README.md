@@ -138,6 +138,9 @@ When looking for interesting attractor(like) structures, we deep dive to binary 
 
   ![image](https://github.com/invpe/Attracthor/assets/106522950/2da4b8f8-8e5e-440a-b870-5357acda296f)
 
+* esp32 sketch compiled
+
+  ![image](https://github.com/invpe/Attracthor/assets/106522950/17178264-016e-4854-9c06-52bdff111bcd)
   
 * /bin/ps - first 42300 datapoints
 
