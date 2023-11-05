@@ -2,6 +2,14 @@
 A gallery of visuals made when looking for strange attractors from various datasets.
 This is still a work in progress.
 
+# Quick links
+
+- [Random values](https://github.com/invpe/Attracthor/tree/main/Viewer#random-numbers)
+- [Analog reads](https://github.com/invpe/Attracthor/tree/main/Viewer#analog-readings)
+- [Wireless frames](https://github.com/invpe/Attracthor/tree/main/Viewer#promisc)
+- [Environment](https://github.com/invpe/Attracthor/tree/main/Viewer#environment)
+- [SDR](https://github.com/invpe/Attracthor/tree/main/Viewer#sdr)
+
 # Setup
 Following setup is used in this experiment.
 
