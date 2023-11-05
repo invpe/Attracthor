@@ -103,7 +103,19 @@ Outcomes: _Perfect randomness_ - by the looks of the visualization - no patterns
 
   ![image](https://github.com/invpe/Attracthor/assets/106522950/db216731-d5dd-42b8-a466-5ac9aaf9a937)
 
+
+* esp32 promisc RSSI of 100000 frames
   
+  This image presents another compelling visualization, this time focusing on the RSSI (Received Signal Strength Indicator) of Wi-Fi frames, which has been plotted using Delayed Space Coordinates
+  
+  Signal Strength Distribution: The RSSI values are indicative of the signal strength at which the Wi-Fi frames are received. A dense cluster of points may signify that the signal strength for a large number of frames is consistently within a certain range.
+
+  Spatial Patterns: The Delayed Space Coordinates method can reveal certain patterns that may indicate repetitive or periodic characteristics in signal strength. If these patterns are circular or elliptical, it could imply a cyclic nature of the signal's strength changes over time or space.
+  
+  Outcomes: While this may not depict a classical attractor found in dynamical systems, the dense central region could metaphorically be considered as an attractor, indicating that the RSSI values tend to "cluster" around this region more frequently than others.
+  The convergence of lines towards the center suggests a commonality in the RSSI readings, possibly the most frequent values or a mean signal strength around which other values fluctuate.Points that diverge significantly from the central clusters could represent outliers in signal strength, possibly due to interference, distance from the source, or other anomalies.
+
+ ![Screenshot from 2023-11-05 15-27-43](https://github.com/invpe/Attracthor/assets/106522950/4cfaa8e7-51ee-41c2-8168-aa9c419fe382)
 
 
 # ENVIRONMENT
