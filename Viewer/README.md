@@ -129,6 +129,9 @@ Outcomes: _Perfect randomness_ - by the looks of the visualization - no patterns
 # BINARY
 
 When looking for interesting attractor(like) structures, we deep dive to binary visualization.
+Outcomes: The observation of different binary files look similar, especially around the "core,". 
+This similarity can be attributed to the common structures that binary files often share, such as headers, standard metadata, and sometimes even common code libraries. 
+Other (non compiled binaries) reveal their own structures that are aligned with their internal format.
 
 * viewer - without debug information
 
