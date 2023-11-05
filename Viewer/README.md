@@ -134,24 +134,26 @@ Include data from physical systems, which might be from experiments that record 
 
 
   
+
+## TEMPERATURE
+
+* Temperature readings from 2021 (full year)
+  
+  Outcomes: The dense core suggests a strong central tendency in the temperature data, meaning there's a range of temperature values that occur more frequently than others. This is often seen in temperature data due to consistent seasonal patterns.Fluctuations from this core may represent seasonal changes, with less frequent extreme temperatures occurring farther from the center.
+Temperature typically changes in a continuous, rather than discrete, manner. This means that readings will often be clustered around a moving average, creating a dense region in a visualization like this one. Any points that are far from the dense core might represent anomalous days where the temperature was significantly higher or lower than the norm for that time of year.
+
+
+  ![image](https://github.com/invpe/Attracthor/assets/106522950/516dca1e-9268-4638-9fdd-da84633a27b2)
+ 
+
  
 ## HUMIDITY
 
 * Humidity readings from 2021 (full year)
 
+  Outcomes: As above
+
   ![image](https://github.com/invpe/Attracthor/assets/106522950/23944ee8-5eb2-4dfc-9099-9ea21a615a8e)
-  
-
-
-## TEMPERATURE
-
-* Temperature readings from 2021 (full year)
-
-  ![image](https://github.com/invpe/Attracthor/assets/106522950/516dca1e-9268-4638-9fdd-da84633a27b2)
-
-
-  A dense core with filaments or strands radiating out, it may indicate a chaotic attractor with a strong pull back to a central set of states (the dense part), with occasional forays into more extreme conditions (the strands).
-
   
 
 # SDR
