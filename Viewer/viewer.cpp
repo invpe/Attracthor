@@ -3,6 +3,7 @@
 #include <vector>
 #include <GL/freeglut.h>
 #include <GL/gl.h>
+#include <limits>
 #include <stdio.h>
 #include <iostream>
 #include <fstream>
@@ -10,25 +11,27 @@
 #include <vector>
 #include <string>
 #include <sstream> 
-
+#include <filesystem>
 #define WIDTH 640
 #define HEIGHT 480
-bool bBreak = false;
 bool bAnimate = false;
 double rX=0; 
 double rY=0;
-double rZ = -6.0;
+double rZ = -3.0;
 struct tPosition
 {
     double x;
     double y;
     double z;
 };  
+std::vector<double> vValues;
+std::vector<tPosition> vPositions; 
+std::vector<std::string> vFiles;
 std::string strFilename;
 int iSimulationSwitch = 0;
 int iSimulationFrame = 0;
-std::vector<double> vValues;
-std::vector<tPosition> vPositions; 
+int iCurrentFile = 0;
+
 void captureScreenshot(const char* filename) {
     int viewport[4];
     glGetIntegerv(GL_VIEWPORT, viewport); // Get the current viewport dimensions
@@ -64,6 +67,81 @@ void captureScreenshot(const char* filename) {
     delete[] pixels;
     std::cout << "Screenshot saved to " << filename << std::endl;
 }
+void Capture()
+{
+    std::string strSS = vFiles[iCurrentFile]+".ppm";
+    captureScreenshot(strSS.c_str());
+
+    std::cout << "Captured to "<<strSS<<std::endl;
+}
+void LoadFiles()
+{ 
+    std::filesystem::path directoryPath = "./";
+    for (const std::filesystem::directory_entry& entry : std::filesystem::directory_iterator(directoryPath)) {
+        if (entry.is_regular_file() && entry.path().extension() == ".txt") {
+            vFiles.push_back(entry.path().filename().string());
+        }
+    }
+    for (const std::string& filename : vFiles) {
+        std::cout << "Found: "<< filename << std::endl;
+    }
+}
+bool LoadFile(const std::string& rstrFileName)
+{   
+    vValues.clear();
+    vPositions.clear();
+    std::cout << "Loading " << rstrFileName<<std::endl;
+
+    std::ifstream file(rstrFileName);  
+    if (!file.is_open()) {
+        std::cout << "Failed to open the file." << std::endl;
+        return 1;
+    }
+
+    std::string line;
+
+    int iMaxValue = std::numeric_limits<int>::min();
+    int iMinValue = std::numeric_limits<int>::max();
+
+    while (std::getline(file, line)) {
+        std::istringstream iss(line);
+        int number;
+        
+        while (iss >> number) {
+
+        if(number < iMinValue)iMinValue = number;
+        if(number > iMaxValue)iMaxValue = number;
+
+        vValues.push_back(number);
+                    
+        }
+    }
+
+    file.close();
+    std::cout << "Min "<<iMinValue<<std::endl;
+    std::cout << "Max "<<iMaxValue<<std::endl; 
+ 
+    // Calculate delayed coordinates and normalize to the range [0, 1]
+    for (int a = 3; a < vValues.size(); a++) {  // Start from a=3 to ensure you have enough history
+        tPosition _Position;
+        
+        // Calculate delayed space coordinates (DSC)
+        _Position.x = vValues[a] - vValues[a - 1];
+        _Position.y = vValues[a - 1] - vValues[a - 2];
+        _Position.z = vValues[a - 2] - vValues[a - 3];
+        
+        // Normalize to the range [0, 1]
+        _Position.x = (_Position.x - iMinValue) / (iMaxValue - iMinValue);
+        _Position.y = (_Position.y - iMinValue) / (iMaxValue - iMinValue);
+        _Position.z = (_Position.z - iMinValue) / (iMaxValue - iMinValue);
+        
+        vPositions.push_back(_Position);
+    }
+    iSimulationFrame =vPositions.size()-1;
+
+    std::cout << "File loaded "<<std::endl;    
+    return 0;
+}
 void renderText(float x, float y, const std::string& text) {
     glRasterPos2f(x, y);  
     for (char c : text) {
@@ -84,7 +162,7 @@ void renderFunction ()
     glMatrixMode(GL_PROJECTION);
     glLoadIdentity(); 
     glColor3f(1.0, 1.0, 1.0); 
-    renderText(-1,0.95,"[s]imulation: "+std::to_string(iSimulationSwitch)+" points: "+std::to_string(vPositions.size())+" rx: "+std::to_string(rX)+" ry: "+std::to_string(rY)+" rz: "+std::to_string(rZ));
+    renderText(-1,0.95,"[s]im: "+std::to_string(iSimulationSwitch)+"/"+std::to_string(iSimulationFrame)+" points: "+std::to_string(vPositions.size())+" rx: "+std::to_string(rX)+" ry: "+std::to_string(rY)+" rz: "+std::to_string(rZ)+" "+vFiles[iCurrentFile]);
     gluPerspective(45.0, (float)WIDTH / (float)HEIGHT, 0.001, 100.0);
     gluLookAt(0,0,1, 0,0,0, 0,1,0);  
     
@@ -96,41 +174,39 @@ void renderFunction ()
     glRotatef( rY, 0.0, 1.0, 0.0 ); 
 
     //  
+
+    glPointSize(2.0f); 
+    glBegin(GL_POINTS); 
     for(int x = 0; x < iSimulationFrame;  x++)
     {
         if(x==iSimulationFrame-1)   
             glColor4f(1,1,1,1);    
         else 
             glColor4f(1,1,1,0.25); 
-
-
-        glBegin(GL_POINTS); 
         glVertex3f(vPositions[x].x, vPositions[x].y, vPositions[x].z); 
-        glEnd();
     }
 
- 
-    /* AXIS
-    glPointSize(2.0f);  
-    glBegin(GL_POINTS);
-    for(int x=0; x < 10; x++)
-    {
-        glColor4f(1,0,0,1);
-        glVertex3f(-5+x,0,0);
-
-    }
     glEnd();
-    
-    glBegin(GL_POINTS);
-    for(int x=0; x < 10; x++)
-    {
-        glColor4f(0,1,0,1);
-        glVertex3f(0,-5+x,0);
+    // This is rendering the space boundary <-1,1>
+    /*
+    glPointSize(6.0f);  
+    glBegin(GL_POINTS); 
 
-    }
+        glVertex3f(-1,-1,-1);
+        glVertex3f(-1,1,-1);
+
+        glVertex3f(1,-1,-1);
+        glVertex3f(1,1,-1);
+
+
+        glVertex3f(-1,-1,1);
+        glVertex3f(-1,1,1);
+
+        glVertex3f(1,-1,1);
+        glVertex3f(1,1,1);
+        
     glEnd();
- */
-    
+    */
     glutSwapBuffers();  
 } 
 void Tick()
@@ -146,8 +222,7 @@ void Tick()
     {
         rX+=0.1;
         rY+=0.1; 
-    }
-  
+    }  
 }
 void timer(int value) { 
     Tick();
@@ -155,12 +230,12 @@ void timer(int value) {
     glutTimerFunc(16, timer, 0);
 }
 void mouse(int button, int state, int x, int y) {
-	if(state == GLUT_DOWN && button == GLUT_LEFT_BUTTON) printf("LMB\n"); 
+	//if(state == GLUT_DOWN && button == GLUT_LEFT_BUTTON) printf("LMB\n"); 
 }
 void keyboard (int key, int x, int y)
 {
 	int modifiers = glutGetModifiers();
-if (key == GLUT_KEY_RIGHT)
+    if (key == GLUT_KEY_RIGHT)
         {
                 rY += 0.1;
         }
@@ -185,13 +260,7 @@ if (key == GLUT_KEY_RIGHT)
                 rZ -= 0.05;
         } 
 }
-void Capture()
-{
-
-            std::string strSS = strFilename+".ppm";
-        captureScreenshot(strSS.c_str());
-}
- void keyboard_normal (unsigned char key, int x, int y)
+void keyboard_normal (unsigned char key, int x, int y)
 {
         if(key=='a')
         {
@@ -201,75 +270,26 @@ void Capture()
         {
             if(iSimulationSwitch == 0)
                 iSimulationSwitch = 1,iSimulationFrame = 0;
-            else iSimulationSwitch = 0,iSimulationFrame = vValues.size();
-
-            printf("Simulation: %i\n", iSimulationSwitch); 
+            else iSimulationSwitch = 0,iSimulationFrame = vValues.size(); 
         }
          if (key == 'z'  ) {Capture();}
+
+         if(key=='q'){iCurrentFile--;if(iCurrentFile<0)iCurrentFile=vFiles.size()-1;LoadFile(vFiles[iCurrentFile]);}
+         if(key=='w'){iCurrentFile++;if(iCurrentFile>vFiles.size()-1)iCurrentFile=0;LoadFile(vFiles[iCurrentFile]);}
 }
- 
 int main(int argc, char *argv[])
 { 
-    if(argc<2)
+
+    LoadFiles();
+    if(vFiles.empty())
     {
-        printf("./viewer <filename>\n");
+        std::cout << "Cant find dataset(s) *.txt files"<<std::endl;
         exit(0);
     }
 
-    if(argc==3)
-        bBreak=true;
+    //
+    LoadFile(vFiles[iCurrentFile]);
 
-    // Add automate option to render,take screenshot and exit
-
-
-    strFilename=argv[1];
-    std::ifstream file(strFilename);  
-    if (!file.is_open()) {
-        std::cout << "Failed to open the file." << std::endl;
-        return 1;
-    }
-
-    std::string line;
-
-    double iMaxValue = -9999;
-    double iMinValue = 9999;
-    while (std::getline(file, line)) {
-        std::istringstream iss(line);
-        double number;
-        
-        while (iss >> number) {
-
-        if(number < iMinValue)iMinValue = number;
-        if(number > iMaxValue)iMaxValue = number;
-
-        vValues.push_back(number);
-                    
-        }
-    }
-
-    file.close();
-
-    printf("Min: %i\n", iMinValue);
-    printf("Max: %i\n", iMaxValue);
- 
-    // Calculate delayed coordinates 
-    for(int a = 1; a < vValues.size(); a++)
-    {  
-
-        tPosition _Position;
-        _Position.x = vValues[a] - vValues[a-1];
-        _Position.y = vValues[a-1] - vValues[a-2];
-        _Position.z = vValues[a-2] - vValues[a-3];
-
-        // Normalize to <0,1> 
-        _Position.x = (_Position.x-iMinValue)/(iMaxValue-iMinValue);
-        _Position.y = (_Position.y-iMinValue)/(iMaxValue-iMinValue);
-        _Position.z = (_Position.z-iMinValue)/(iMaxValue-iMinValue);
-        vPositions.push_back(_Position);  
-    }
- 
-    iSimulationFrame =vPositions.size()-1;
-    printf("Done loading\n");
 
     glutInit (&argc, argv);    
     glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGBA | GLUT_DEPTH); 
