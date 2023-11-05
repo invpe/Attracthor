@@ -100,6 +100,21 @@ Outcomes: _Perfect randomness_ - by the looks of the visualization - no patterns
   
   A dense core with filaments or strands radiating out, it may indicate a chaotic attractor with a strong pull back to a central set of states (the dense part), with occasional forays into more extreme conditions (the strands).
 
+## HUMIDITY
+
+* Humidity readings from 2022 (full year)
+
+  ![image](https://github.com/invpe/Attracthor/assets/106522950/90afb67f-092f-401b-86cd-b87fbcafec62)
+
+## TEMPERATURE
+
+* Temperature readings from 2022 (full year)
+
+  ![image](https://github.com/invpe/Attracthor/assets/106522950/c8fbdb82-fca1-42f7-a470-a04d96195edb)
+
+
+  
+
 # SDR
 Using an SDR (Software Defined Radio) device to explore the noise from surroundings.
 The electromagnetic noise captured by an SDR is essentially a time series of signal strengths that can be quite complex, influenced by a wide array of factors such as human-made signals, natural atmospheric phenomena, and cosmic sources. 
