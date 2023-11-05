@@ -4,7 +4,8 @@
 Applying the Delayed Space Coordinates (DSC) technique to a system, like a sequence of random numbers, to explore and discover whether the system exhibits chaotic behavior but most imporantly, to
 look for beautifull intriguing strange attractors.
 
-![image](https://github.com/invpe/Attracthor/assets/106522950/124343e1-a4df-46f8-9a57-a74bf8879cd7)
+![image](https://github.com/invpe/Attracthor/assets/106522950/dbb0667d-5cd3-47d4-832e-f9710bc48f61)
+
 
 The presence of beautiful and visually striking patterns, often referred to as "strange attractors," in the visualizations resulting from the application of Delayed Space Coordinates (DSC) on random data can be intriguing. 
 These strange attractors are unexpected and complex patterns that emerge in the data, and they can have various interpretations in the context of applying DSC to a dataset.
