@@ -7,7 +7,7 @@ This is still a work in progress.
 - [Random values](https://github.com/invpe/Attracthor/tree/main/Viewer#random-numbers)
 - [Analog reads](https://github.com/invpe/Attracthor/tree/main/Viewer#analog-readings)
 - [Wireless frames](https://github.com/invpe/Attracthor/tree/main/Viewer#promisc)
-- [Binaries](https://github.com/invpe/Attracthor/blob/main/Viewer/README.md#binary)
+- [Binaries & File Formats](https://github.com/invpe/Attracthor/blob/main/Viewer/README.md#binary)
 - [Environment](https://github.com/invpe/Attracthor/tree/main/Viewer#environment)
 - [SDR](https://github.com/invpe/Attracthor/tree/main/Viewer#sdr)
 
