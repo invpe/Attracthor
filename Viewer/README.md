@@ -97,6 +97,8 @@ Outcomes: _Perfect randomness_ - by the looks of the visualization - no patterns
 * PM10 readings from 2022 (full year)
   
   ![image](https://github.com/invpe/Attracthor/assets/106522950/2e813856-39db-47e8-945d-01a4d82b78b4)
+  ![image](https://github.com/invpe/Attracthor/assets/106522950/ce4ec855-a513-4501-a713-c7ecc64e91f8)
+
   
   A dense core with filaments or strands radiating out, it may indicate a chaotic attractor with a strong pull back to a central set of states (the dense part), with occasional forays into more extreme conditions (the strands).
 
