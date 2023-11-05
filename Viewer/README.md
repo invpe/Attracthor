@@ -125,6 +125,24 @@ Outcomes: _Perfect randomness_ - by the looks of the visualization - no patterns
 
  ![Screenshot from 2023-11-05 15-27-43](https://github.com/invpe/Attracthor/assets/106522950/4cfaa8e7-51ee-41c2-8168-aa9c419fe382)
 
+# BINARY
+
+When looking for interesting attractor(like) structures, we deep dive to binary visualization.
+
+* viewer - without debug information
+
+  ![image](https://github.com/invpe/Attracthor/assets/106522950/b190eadb-d4b9-4ea1-9b5e-5a48cf58e437)
+
+
+* viewer - with debug information (-g)
+
+  ![image](https://github.com/invpe/Attracthor/assets/106522950/2da4b8f8-8e5e-440a-b870-5357acda296f)
+
+  
+* /bin/ps - first 42300 datapoints
+
+  ![image](https://github.com/invpe/Attracthor/assets/106522950/4f42a5db-885b-402e-96e2-46c03bd39e9f)
+
 
 # ENVIRONMENT
 
