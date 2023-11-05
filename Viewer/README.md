@@ -146,6 +146,11 @@ When looking for interesting attractor(like) structures, we deep dive to binary 
 
   ![image](https://github.com/invpe/Attracthor/assets/106522950/4f42a5db-885b-402e-96e2-46c03bd39e9f)
 
+* .max file
+
+  ![image](https://github.com/invpe/Attracthor/assets/106522950/a31c9648-bfb4-4600-bbf2-1e6b6f66d40b)
+
+
 
 # ENVIRONMENT
 
