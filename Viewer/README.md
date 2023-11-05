@@ -74,7 +74,6 @@ This function automatically busy-waits to ensure enough external entropy has bee
 Outcomes: _Perfect randomness_ - by the looks of the visualization - no patterns, random distribution of points in the space.
 
 * esp32 no-wifi  
-  
 
   ![image](https://github.com/invpe/Attracthor/assets/106522950/25dfa05d-0e28-4ded-a260-cb12494b4061)
 
@@ -90,6 +89,11 @@ Outcomes: _Perfect randomness_ - by the looks of the visualization - no patterns
   ![image](https://github.com/invpe/Attracthor/assets/106522950/2ee59848-103f-4e1d-93ae-521903c6daea)
   ![image](https://github.com/invpe/Attracthor/assets/106522950/5fb0e38d-9fba-4930-924f-c2d8cff32bd3)
 
+# Promisc
+
+* esp32 promisc length of packet including Frame Check Sequence(FCS)
+
+  ![image](https://github.com/invpe/Attracthor/assets/106522950/db216731-d5dd-42b8-a466-5ac9aaf9a937)
 
 
 # ENVIRONMENT
