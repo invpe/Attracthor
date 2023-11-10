@@ -74,6 +74,12 @@ Outcomes: _Perfect randomness_ - by the looks of the visualization - no patterns
   ![image](https://github.com/invpe/Attracthor/assets/106522950/2cba7e32-c45c-4a6f-b07a-3ba94fab3bcb)
 
 
+## RANDOM WALK
+Utilize a distributed network of ESP32 nodes to perform independent Random Walk simulations, generating datasets that can be visualized using Delayed Space Coordinates to search for complex, attractor-like structures.The DSC technique is applied to transform the time series data from the Random Walk into a multidimensional phase space, making it possible to visually analyze the data for patterns.
+The visual output is analyzed to identify regions of interest, such as areas where paths frequently cross or converge, which may indicate underlying order within the randomness.
+While true attractors are not expected in a pure Random Walk, the visualization might still reveal interesting, dense formations due to the nature of the DSC and the scale of data aggregation.
+
+This approach leverages the inherent unpredictability of Random Walks and the parallel processing capabilities of a distributed network to explore a broad spectrum of stochastic behaviors. By applying DSC and visualization techniques to this exploration, the project seeks to discover patterns that, while not attractors in the classical sense, may exhibit a form of emergent order or statistical regularity that is aesthetically and analytically captivating.
 
 ## ESP32
 
@@ -198,12 +204,6 @@ Temperature typically changes in a continuous, rather than discrete, manner. Thi
   ![image](https://github.com/invpe/Attracthor/assets/106522950/23944ee8-5eb2-4dfc-9099-9ea21a615a8e)
   
 
-# RANDOM WALK
-Utilize a distributed network of ESP32 nodes to perform independent Random Walk simulations, generating datasets that can be visualized using Delayed Space Coordinates to search for complex, attractor-like structures.The DSC technique is applied to transform the time series data from the Random Walk into a multidimensional phase space, making it possible to visually analyze the data for patterns.
-The visual output is analyzed to identify regions of interest, such as areas where paths frequently cross or converge, which may indicate underlying order within the randomness.
-While true attractors are not expected in a pure Random Walk, the visualization might still reveal interesting, dense formations due to the nature of the DSC and the scale of data aggregation.
-
-This approach leverages the inherent unpredictability of Random Walks and the parallel processing capabilities of a distributed network to explore a broad spectrum of stochastic behaviors. By applying DSC and visualization techniques to this exploration, the project seeks to discover patterns that, while not attractors in the classical sense, may exhibit a form of emergent order or statistical regularity that is aesthetically and analytically captivating.
 
 
 # SDR
