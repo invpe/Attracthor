@@ -198,6 +198,9 @@ Temperature typically changes in a continuous, rather than discrete, manner. Thi
   ![image](https://github.com/invpe/Attracthor/assets/106522950/23944ee8-5eb2-4dfc-9099-9ea21a615a8e)
   
 
+# RANDOM WALK
+
+
 # SDR
 Using an SDR (Software Defined Radio) device to explore the noise from surroundings.
 The electromagnetic noise captured by an SDR is essentially a time series of signal strengths that can be quite complex, influenced by a wide array of factors such as human-made signals, natural atmospheric phenomena, and cosmic sources. 
