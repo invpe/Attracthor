@@ -15,6 +15,7 @@ This is still a work in progress.
 - [Environment](https://github.com/invpe/Attracthor/tree/main/Viewer#environment)
 - [PI](https://github.com/invpe/Attracthor/tree/main/Viewer/README.md#pi)
 - [SDR](https://github.com/invpe/Attracthor/tree/main/Viewer#sdr)
+- [HIDDEN CODE](https://github.com/invpe/Attracthor/tree/main/Viewer/README.md#hidden-codes)
 
 # Setup
 Following setup is used in this experiment.
@@ -230,4 +231,31 @@ The electromagnetic noise captured by an SDR is essentially a time series of sig
 - Broad Spectrum Analysis: Alternatively, capture a broad spectrum of frequencies. This can give more comprehensive dataset that includes various sources of noise and signals.
 - Raw IQ Data: Record the raw IQ (in-phase and quadrature) data, which preserves the full information of the received signal and would be more suitable for complex analysis.
 
-  
+
+# Hidden Codes
+We generate a dataset that hides a "code" or pattern within, we consider embedding a series of structured values among random data, simulating a hidden message or signal. 
+
+1. Start with a Random Dataset: Generate random numbers or capture natural data (like sound or sensor inputs) for the baseline.
+2. Inject a Structured Pattern: Introduce a recurring numerical pattern or waveform, such as repeating sequences or signals that gradually increase/decrease.
+3. Obscure with Noise: Add random fluctuations or random data to mask the structure, making it less apparent visually.
+4. DSC and Entropy Analysis: Run this dataset through the system to see if the structured pattern lowers the entropy value, making it easier to detect clusters.
+
+ 
+`0.6 noise level`
+
+![image](https://github.com/user-attachments/assets/bc19a11c-7460-444e-ab53-84e17bc7b4da)
+
+`0.7 noise level`
+
+![image](https://github.com/user-attachments/assets/bf21d55e-ce9c-45c3-9109-3bb15be27649)
+
+`0.8 noise level`
+
+![image](https://github.com/user-attachments/assets/64aa124c-8b9f-4504-ab9a-6b9bcb4542d9)
+
+`0.9 noise level`
+
+![image](https://github.com/user-attachments/assets/8ce6b47e-8a2a-4562-9d72-53f64a4917ec)
+
+Outcomes: As we adjust the noise level, we see the data's central structure becoming more evident and distinct at lower noise levels. This visualizes how the noise gradually reveals the hidden "code" or pattern within the data.
+
