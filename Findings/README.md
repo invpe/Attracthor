@@ -283,6 +283,9 @@ Outcomes: As we adjust the noise level, we see the data's central structure beco
 # Electromagnetic noise
 Passively monitoring the electromagnetic environment, capturing any signal fluctuations that might occur due to natural or human-made events. Placing an ESP32 with an exposed analog pin (e.g., connected to a wire acting as an antenna) in the garden, you could pick up environmental electromagnetic noise, radio frequency interference, or even fluctuations in the surrounding electrical field. These readings would likely be very sensitive to changes in the environment, weather conditions, or even nearby electronics.
 
+![image](https://github.com/user-attachments/assets/5857739e-6cb1-4967-aba3-1fe429154146)
+
+
 What could we be doing with this?
 
 - Environmental Signal Monitoring: You’d be passively monitoring the electromagnetic environment, capturing any signal fluctuations that might occur due to natural or human-made events.
