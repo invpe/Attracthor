@@ -295,4 +295,43 @@ What could we be doing with this?
 - Signal Analysis: By analyzing the noise captured, we might stumble upon strange periodic signals, interference, or even anomalies that deviate from expected randomness.
 
 
+## Setup
+
+We will run ESP32 node with [sketch](https://github.com/invpe/Attracthor/blob/main/Generators/ANTENOWIEC.ino), that will expose an endpoint with analog readings from the pin (A0) where a wire is connected. A simple python sketch, will request for readings every second, and write value to a file. A new file will be created every `10000` samples ( around 2.5hrs ).
+
+```
+-rw-rw-r-- 1 invpe invpe  20K Oct  7 19:45 antenowiec_1.txt
+-rw-rw-r-- 1 invpe invpe  20K Oct  7 22:56 antenowiec_2.txt
+-rw-rw-r-- 1 invpe invpe  20K Oct  8 02:04 antenowiec_3.txt
+-rw-rw-r-- 1 invpe invpe  20K Oct  8 05:14 antenowiec_4.txt
+-rw-rw-r-- 1 invpe invpe  20K Oct  8 08:32 antenowiec_5.txt
+-rw-rw-r-- 1 invpe invpe  20K Oct  8 11:40 antenowiec_6.txt
+-rw-rw-r-- 1 invpe invpe  12K Oct  8 13:37 antenowiec_7.txt
+```
+
+We will run a distributed task with [Tesselator](https://github.com/invpe/Tesselator) to perform DSC calculate points per bin and return `entropy` value for each of the files. See the task details [here](https://github.com/invpe/Tesselator/blob/main/Tasks/tessie_chaos.c). Yes this could be easily done on a single machine, but with more sources being added i want this to be picked up by ULP devices, not a laptop working 24x7.
+
+![image](https://github.com/user-attachments/assets/f01e4e14-f943-4d1d-a29b-52c779528f04)
+
+
+```
+Output from the Tesselator task:
+
+# Bin (-5, -5): Points = 12
+# Bin (-5, -4): Points = 0
+# Bin (-5, -3): Points = 0
+
+...
+# Bin (4, 0): Points = 10
+# Bin (4, 1): Points = 0
+# Bin (4, 2): Points = 0
+# Bin (4, 3): Points = 2
+# Bin (4, 4): Points = 5900
+# Entropy = 0.529664
+```
+ 
+
+
+
+
 </details>
