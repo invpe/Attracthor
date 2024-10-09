@@ -328,6 +328,19 @@ Output from the Tesselator task:
 ```
  
 
+## Initial compare
+
+Visualizations show comparison between a node placed in home vs a node placed outside in the garden, same time of day.
+The visualization clearly shows how the environment inside the home varies from that outside in the garden, even with identical hardware and setup. This contrast could be influenced by factors like electronic noise from devices indoors, differences in ambient electromagnetic fields, and other environmental variables.
+
+Home:
+
+![image](https://github.com/user-attachments/assets/ac52da5b-ac31-4a55-81b2-a5c06fa09f4f)
+
+Garden:
+
+![image](https://github.com/user-attachments/assets/300b3199-30f4-4b58-8438-8b40bbfe0793)
+
 
 
 
